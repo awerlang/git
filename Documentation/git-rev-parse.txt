@@ -139,8 +139,10 @@ can be used.
 --short::
 --short=number::
 	Instead of outputting the full SHA-1 values of object names try to
-	abbreviate them to a shorter unique name. When no length is specified
-	7 is used. The minimum length is 4.
+	abbreviate them to a shorter unique name. When no length is specified,
+	it is guessed from the number of objects in the repository. In any case,
+	the actual length will be enough to identify the object unambiguously
+	in the current state of the repository.	The minimum length is 4.
 
 --symbolic::
 	Usually the object names are output in SHA-1 form (with
